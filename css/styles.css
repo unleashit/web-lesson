@@ -1,1 +1,22 @@
 /* add all styles here */
+body {
+	font-family: helvetica, sans-serif;
+	font-size: 17px;
+	color:#444;
+	line-height: 25px;
+}
+h1 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color:#ccc;
+
+}
+h2 {
+	font-size: 21px;
+	}
+p, h1, h2, ul {margin-bottom:20px;}
+
+
+.special {
+	color: red;
+}
