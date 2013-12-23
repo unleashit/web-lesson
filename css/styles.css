@@ -5,6 +5,7 @@ body {
 	color:#444;
 	line-height: 25px;
 }
+p, h1, h2, h4, h5, h5, ul {margin-bottom:20px;}
 h1 {
 	font-size: 25px;
 	text-transform: uppercase;
@@ -14,8 +15,6 @@ h2 {
 	font-size: 21px;
 	color: orange;
 	}
-
-p, h1, h2, h4, h5, h5, ul {margin-bottom:20px;}
 
 ul {
 	margin-left: 45px;
@@ -32,13 +31,7 @@ a {
  	text-decoration: none;
 }
 a:hover {text-decoration: underline;}
-.wrapper {
-	width:800px;
-	padding:40px;
-	margin:0 auto 0 auto;
-	background-color: #eee;
 
-}
 .subhead {
 	margin-left: 30px;
 	border-left:6px solid #ccc;
