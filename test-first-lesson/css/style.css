@@ -1,0 +1,44 @@
+body {
+	font-family: trebuchet, sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: #222;
+	background-color: gold;
+}
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h1, h2, h3, h4, p, ul {
+
+	margin-bottom: 15px;
+}
+
+.author {
+
+}
+
+.date {
+
+}
+ul {
+	list-style-type: disc;
+	margin-left: 50px;
+	line-height:20px;
+}
+li {
+	
+}
+
