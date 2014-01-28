@@ -62,13 +62,6 @@ header {
 	width:300px;
 	margin-top:14px;
 }
-nav.main-nav {
-	float: right;
-	color: white;
-	width: 400px;
-	background-color: #555;
-	height:65px;
-}
 h1.logo {
 	color: #B2C629;
 	font-size: 48px;
@@ -78,6 +71,33 @@ h1.logo {
 	font-size:15px;
 	color:#ddd;
 	margin-top:14px;
+}
+nav.main-nav {
+	float: right;
+	width: 640px;
+}
+nav.main-nav ul {
+	list-style-type: none;
+	margin:0;
+	float: right;
+}
+nav.main-nav li {
+	float: left;
+	}
+nav.main-nav a {
+	color: #999;
+	display: block;
+	padding: 0 18px;
+	background-color: #333;
+	height:52px;
+	line-height:52px;
+	font-size:17px;
+	font-weight: bold;
+}
+nav.main-nav a.active, nav.main-nav a:hover {
+	background-color: #B2C629;
+	color:#fff;
+	text-decoration: none;
 }
 section.slideshow {
 	background: #B2C629;
@@ -106,10 +126,39 @@ position: relative;
 .next-arrow {
 	right:0;
 }
+
 a.btn {
 	padding: 10px 14px;
 	background: #95AD19;
 	color: #fff;
 	font-weight: bold;
 	border-radius: 8px;
+}
+section.teaser-group {
+	padding:30px 0;
+}
+.teaser {
+	float:left;
+	width: 303px;
+	padding-right: 25px;
+}
+.teaser:last-child {
+	padding-right: 0;
+}
+.teaser-img {
+	float:left;
+	border: 1px solid #555;
+	padding: 6px;
+}
+h3 {
+	float:left;
+	margin-left:15px;
+	width: 200px;
+	font-size: 19px;
+	line-height: 22px;
+}
+.teaser p {
+	margin-top: 20px;
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
 }
