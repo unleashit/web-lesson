@@ -74,11 +74,15 @@
 <!-- notice how the 3 teasers are all simply called teaser (not teaser1, teaser2, teaser3). That's because they all require the exact same css except the last one. There is an extra style for the :last-child to remove the extra padding-right. It's better to comine/reuse styles whenever possible -->		
 
 		<div class="teaser">
+			
+<!-- The float for the thumb image and the h3 at the top could have been done more simply, but it would have meant a long explaination. This works fine -->
 				<div class="clearfix">
 				<img src="images/4.jpg" alt="amazing building" class="teaser-img">
 				<h3>Nullamlacus dui ipsum conseque loborttis</h3>
 				</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
+
+<!-- CHANGE: added class="first" so we can target only the first paragraph of the teaser in the css-->
+			<p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
 			<a href="#" class="btn">Continue Reading »</a>
 		</div> <!-- teaser ends -->
 		<div class="teaser">
@@ -86,7 +90,7 @@
 				<img src="images/4.jpg" alt="amazing building" class="teaser-img">
 				<h3>Nullamlacus dui ipsum conseque loborttis</h3>
 				</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
+			<p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
 			<a href="#" class="btn">Continue Reading »</a>
 		</div> <!-- teaser ends -->
 		<div class="teaser">
@@ -94,9 +98,10 @@
 				<img src="images/4.jpg" alt="amazing building" class="teaser-img">
 				<h3>Nullamlacus dui ipsum conseque loborttis</h3>
 				</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
+			<p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
 			<a href="#" class="btn">Continue Reading »</a>
 		</div> <!-- teaser ends -->
+
 	</div> <!-- container ends -->
 </section>
 
