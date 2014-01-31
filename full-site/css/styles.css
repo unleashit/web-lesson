@@ -72,6 +72,8 @@ h1.logo {
 	color:#ddd;
 	margin-top:14px;
 }
+
+/* added .main-nav as a class to the nav to make it unique and discern it from other navigations that might be added later */
 nav.main-nav {
 	float: right;
 	width: 640px;
@@ -103,6 +105,9 @@ section.slideshow {
 	background: #B2C629;
 	padding: 20px 0;
 }
+section.slideshow .container {
+position: relative;
+}
 .slide-text {
 float: left;
 width: 420px;
@@ -113,14 +118,13 @@ float: right;
 width: 380px;
 margin-right: 60px;
 }
-section.slideshow .container {
-position: relative;
-}
 .prev-arrow, .next-arrow {
+/* combined these into a single style for easier maintenance */
 	position: absolute;
 	top:95px;
 }
 .prev-arrow {
+/* left, right, top and bottom are properties that work for position: absolute (or relative) ONLY */
 	left:0;
 }
 .next-arrow {
@@ -142,9 +146,12 @@ section.teaser-group {
 	width: 303px;
 	padding-right: 25px;
 }
+
+/* :last-child is compatible with IE7 and above so we're good here. :first-child or :first-of-type requires IE9+ */
 .teaser:last-child {
 	padding-right: 0;
 }
+
 .teaser-img {
 	float:left;
 	border: 1px solid #555;
@@ -157,7 +164,9 @@ h3 {
 	font-size: 19px;
 	line-height: 22px;
 }
-.teaser p {
+
+/* CHANGE: targeting ONLY the first paragraph of the teaser, in case someone adds a second or more para later. If left as .teaser p, 2nd and more paras would each have a border and too much spacing */
+.teaser p.first {
 	margin-top: 20px;
 	border-top: 1px solid #ccc;
 	padding-top: 20px;

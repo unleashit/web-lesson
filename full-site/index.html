@@ -44,51 +44,65 @@
 </header>
 
 <section class="slideshow">
-	
 	<div class="container clearfix">
-		<div class="prev-arrow"><a href="#"><img src="images/prev.png" alt="Previous Slide"></a>
+
+<!-- the slideshow nav arrows are abosolutely positioned. It doesn't matter what order they appear in the markup as long as they are inside the parent div that has position:relative in the css -->
+		
+		<div class="prev-arrow">
+			<a href="#"><img src="images/prev.png" alt="Previous Slide"></a>
 		</div>
 		<div class="next-arrow">
-			<a href="#"><img src="images/next.png" alt="Next Slide"></a></div>
+			<a href="#"><img src="images/next.png" alt="Next Slide"></a>
+		</div>
+
 		<div class="slide-text">
-		<h2>Cursus penati saccum ut curabitur nulla</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, consectetur, aperiam, assumenda ipsa consequuntur magni sed esse officia velit provident deserunt fugit laudantium hic quibusdam sit nihil quae? Enim, ullam.</p>
-		<a href="#" class="btn">Continue Reading »</a>
-	</div> <!-- slide-text ends -->
-	<div class="slide-image">
-		<img src="images/1.jpg" alt="">
-	</div>
+			<h2>Cursus penati saccum ut curabitur nulla</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, consectetur, aperiam, assumenda ipsa consequuntur magni sed esse officia velit provident deserunt fugit laudantium hic quibusdam sit nihil quae? Enim, ullam.</p>
+			<a href="#" class="btn">Continue Reading »</a>
+		</div> <!-- slide-text ends -->
+
+		<div class="slide-image">
+			<img src="images/1.jpg" alt="">
+		</div> <!-- slide-image ends -->
 
 	</div> <!-- container ends -->
 </section>
+
 <section class="teaser-group">
 	<div class="container clearfix">
+
+<!-- notice how the 3 teasers are all simply called teaser (not teaser1, teaser2, teaser3). That's because they all require the exact same css except the last one. There is an extra style for the :last-child to remove the extra padding-right. It's better to comine/reuse styles whenever possible -->		
+
 		<div class="teaser">
-			<div class="clearfix">
+				<div class="clearfix">
 				<img src="images/4.jpg" alt="amazing building" class="teaser-img">
-			<h3>Nullamlacus dui ipsum conseque loborttis</h3>
-		</div>
+				<h3>Nullamlacus dui ipsum conseque loborttis</h3>
+				</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
 			<a href="#" class="btn">Continue Reading »</a>
 		</div> <!-- teaser ends -->
 		<div class="teaser">
-			<div class="clearfix">
+				<div class="clearfix">
 				<img src="images/4.jpg" alt="amazing building" class="teaser-img">
-			<h3>Nullamlacus dui ipsum conseque loborttis</h3>
-		</div>
+				<h3>Nullamlacus dui ipsum conseque loborttis</h3>
+				</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
 			<a href="#" class="btn">Continue Reading »</a>
 		</div> <!-- teaser ends -->
 		<div class="teaser">
-			<div class="clearfix">
-			<img src="images/4.jpg" alt="amazing building" class="teaser-img">
-			<h3>Nullamlacus dui ipsum conseque loborttis</h3>
-		</div>
+				<div class="clearfix">
+				<img src="images/4.jpg" alt="amazing building" class="teaser-img">
+				<h3>Nullamlacus dui ipsum conseque loborttis</h3>
+				</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quo, asperiores, reprehenderit, odit quis sunt repellat quaerat quidem dolore pariatur dolorum necessitatibus officia incidunt quam.</p>
 			<a href="#" class="btn">Continue Reading »</a>
 		</div> <!-- teaser ends -->
 	</div> <!-- container ends -->
 </section>
+
+<footer>
+	<!-- Try to complete this! --> 
+</footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
